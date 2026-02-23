@@ -1,0 +1,317 @@
+#caja{
+    width: 100%;
+    margin: 0 auto;
+    background-color: #FFF8F0;
+}
+
+body{
+  background-color: #FFF8F0;
+}
+
+header{
+  width: 100%;
+    background: #fff;
+  padding: 10px 0;
+  
+  
+
+}
+
+.cabecera{
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    
+}
+
+
+
+.imagen-logo{
+    width: 90px;
+    height: auto;
+    
+}
+
+
+.menu{
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;          /* clave para que no se rompa */
+  justify-content: flex-end;
+  
+}
+
+.menu a{
+  background-color: #143642;
+  color: white;
+  text-decoration: none;
+  padding: 8px 18px;
+  border-radius: 6px;
+  transition: 0.3s;
+  white-space: nowrap;
+  text-align: center;
+  
+  width: auto;
+  display: inline-flex;
+}
+
+
+
+
+/* ====== CONTENIDO BODY ====== */
+.contenedor{
+  width: min(1100px, 92%);
+  margin: 0 auto;
+}
+
+.section{ padding: 42px 0; }
+.section--alt{ background: #FFF8F0; }
+
+.titulo{
+  margin: 0 0 8px;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.subtitulo{
+  margin: 0 0 20px;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* ====== SLIDER ====== */
+.slider{ padding: 18px 0 10px; }
+
+.slider__wrap{
+  position: relative;
+  width: min(1200px, 96%);
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 14px;
+  border: 1px solid #ddd;
+  background: #000;
+}
+
+/* ocultar todos */
+.sliderbanner{ display: none; }
+/* mostrar el activo */
+.sliderbanner.activo{ display: block; }
+
+.sliderbanner img{
+  width: 100%;
+  height: 340px;
+  display: block;
+}
+
+/* Botones */
+.slider__btn{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 0;
+  cursor: pointer;
+  font-size: 22px;
+  color: #fff;
+  background: rgba(0,0,0,.55);
+}
+
+.slider__btn.prev{ left: 12px; }
+.slider__btn.next{ right: 12px; }
+
+.slider__btn:hover{ background: rgba(0,0,0,.75); }
+
+/* PUNTOS DEL SLIDER */
+.slider__puntos{
+  position: absolute;
+  left: 50%;
+  bottom: 12px;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 9px;
+}
+
+.punto-slider{
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 0;
+  cursor: pointer;
+  background: rgba(255,255,255,.7);
+}
+
+.punto-slider.activo{ background: #ffb000; }
+
+/* ====== PRODUCTOS ====== */
+.productos{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  
+}
+
+.producto{
+  background: white;
+  border: 1px solid #e2e2e2;
+  border-radius: 14px;
+  padding: 16px;
+  position: relative;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.producto h3{ margin: 0 0 8px; font-size: 18px; }
+.producto p{ margin: 0; color: #444; line-height: 1.5; }
+
+.alitasbbq{
+  max-width: 300px;
+  border-radius: 10px;
+  display: block;
+  margin: 15px auto 0;
+  height: 200px;
+ 
+}
+
+.alitasacevichadas{
+  max-width: 300px;
+  border-radius: 10px;
+  display: block;
+  margin: 15px auto 0;
+  height: 200px;
+}
+.alitasorientales{
+  max-width: 300px;
+  border-radius: 10px;
+  display: block;
+  margin: 15px auto 0;
+  height: 200px;
+}
+
+.boton-whatsapp{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: #25D366;
+    color: white;
+    text-decoration: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-weight: 600;
+
+    margin-top: 12px;
+  transition: all 0.3s ease;
+}
+
+.boton-whatsapp img{
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.boton-whatsapp:hover{
+  background: #1ebe5d;;
+  transform: translateY(-2px);
+}
+
+.tag{
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: #ff3d2e;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+/* ====== PROMOCIONES ====== */
+.promos{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  background-color: #FFF8F0;
+ 
+}
+
+.promo{
+  background: #fff;
+  border: 1px solid #e2e2e2;
+  border-radius: 14px;
+  padding: 16px;
+  
+}
+
+.promo h3{ margin: 0 0 8px; font-size: 18px; }
+.promo p{ margin: 0 0 10px; color: #444; }
+
+.precio{ font-size: 18px; font-weight: 900; }
+
+/* ====== Caracteristicas ====== */
+.caracteristicas{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.item{
+  background: #fff;
+  border: 1px solid #e2e2e2;
+  border-radius: 14px;
+  padding: 16px;
+}
+
+.item h3{ margin: 0 0 8px; font-size: 18px; }
+.item p{ margin: 0; color: #444; line-height: 1.5; }
+
+/* ====== CTA ====== */
+.promo-final { 
+    padding: 30px 0 55px; 
+}
+
+.promo-final__box {
+    background: #FF6B00; 
+    color: #fff;
+    border-radius: 16px;
+    padding: 22px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    box-shadow: 0 4px 10px rgba(255, 107, 0, 0.2); 
+}
+
+.promo-final__btn {
+    background: #fff;
+    color: #FF6B00;
+    padding: 12px 24px;
+    border-radius: 12px;
+    font-weight: 900;
+    text-decoration: none; 
+    transition: 0.3s;
+}
+
+.promo-final__btn:hover {
+    background: #222;
+    color: #fff;
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 900px){
+  .sliderbanner img{ height: auto; }
+
+  .productos, .promos, .caracteristicas{
+    grid-template-columns: 1fr;
+  }
+
+  .promo-final__box{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
